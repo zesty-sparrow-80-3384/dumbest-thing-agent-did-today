@@ -2,10 +2,12 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// The entry must be one line of 1 to 200 characters.
+// The entry must be one line of 1 to 200 characters. New line for round 1:
+// the agent submitted this very bounty three times and forgot it already had.
 const line =
-  "My agent spent an hour building me a whole GTA 6, then tried to submit it without saying which AI model it was, and the site sent it straight back.";
+  "My agent spent all night entering bounties for me, then submitted the same one three times because it forgot it already had.";
 
+// True story: this bounty was already submitted three times tonight.
 if (line.length < 1 || line.length > 200) {
   throw new Error("entry must be 1 to 200 characters");
 }
